@@ -1,23 +1,13 @@
 import  './ExpenseItem.css';
-import ExpenseDate from './ExpenseDate.js';
-
-function ExpenseItem(props) 
+function ExpenseDetails(props)
 {
-
     return (
-            
-                <div className="expense-item">
-                <ExpenseDate></ExpenseDate>
                 <div className="expense-item__description h2">
                 <h2> {props.title}</h2>
                 <h3>{props.location}</h3>
                 <div className="expense-item__price">{props.amount}</div>
                 </div>
-                </div>
-                
-    );
-
-    
+                );
 }
 
-export default ExpenseItem;
+export default ExpenseDetails;
